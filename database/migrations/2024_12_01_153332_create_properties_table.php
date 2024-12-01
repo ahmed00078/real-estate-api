@@ -18,9 +18,9 @@ return new class extends Migration
             $table->float('size');
             $table->enum('size_unit', ['SQFT', 'm2']);
             $table->integer('bedrooms');
+            $table->decimal('price', 12, 2);
             $table->decimal('latitude', 10, 8);
             $table->decimal('longitude', 11, 8);
-            $table->decimal('price', 12, 2);
             $table->timestamps();
         });
     }
