@@ -53,8 +53,8 @@ DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=real-estate-api
-DB_USERNAME=your_username(default: root)
-DB_PASSWORD=your_password(default: )
+DB_USERNAME=root (or your preferred username)
+DB_PASSWORD= (default: empty)
 ```
 
 5. Generate application key
@@ -132,8 +132,7 @@ php artisan test
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## Contact
+## Contact Information
 
-Danubio IT Services - hello@danub.io(from their website)
-
-Me - ahmedsidimohammed78@gmail.com
+- Danubio IT Services: hello@danub.io (from their website)
+- Me: ahmedsidimohammed78@gmail.com
