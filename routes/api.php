@@ -20,7 +20,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::prefix('properties')->group(function () {
-    Route::get('/', [PropertyController::class, 'index']);
     Route::post('/', [PropertyController::class, 'store']);
+    Route::get('/', [PropertyController::class, 'index']);
     Route::get('/search-location', [PropertyController::class, 'searchByLocation']);
 });
