@@ -106,6 +106,36 @@ php artisan serve
   - `longitude`: Longitude of center point
   - `radius`: Search radius in kilometers (default: 10km)
 
+
+
+### Example URLs for Testing
+
+1. **Create Property** (POST `/api/properties`):
+   - **URL**: `http://localhost:8000/api/properties`
+   - **Request Body (JSON)**:
+   ```json
+   {
+       "type": "House",
+       "address": "123 Main St, Cityville",
+       "size": 2000,
+       "size_unit": "SQFT", 
+       "bedrooms": 3,
+       "latitude": 40.7128,
+       "longitude": -74.0060,
+       "price": 500000
+   }
+   ```
+
+2. **Search Properties** (GET `/api/properties`):
+   - `http://localhost:8000/api/properties`
+   - Filter by type: `http://localhost:8000/api/properties?type=House`
+   - Filter by address: `http://localhost:8000/api/properties?address=Main`
+   - Filter by size range: `http://localhost:8000/api/properties?min_size=1500&max_size=2500`
+   
+3. **Search by Location** (GET `/api/properties/search-location`):
+   - `http://localhost:8000/api/properties/search-location?latitude=40.7128&longitude=-74.0060`
+   - With radius: `http://localhost:8000/api/properties/search-location?latitude=40.7128&longitude=-74.0060&radius=20`
+
 ## Testing
 
 ### Run Tests
