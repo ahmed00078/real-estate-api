@@ -10,7 +10,7 @@ This is a Laravel-based REST API for managing real estate properties, developed 
 - Search properties with multiple filters:
   - Property type
   - Address
-  - Size (SQFT or m²)
+  - Size (SQFT or m2)
   - Number of bedrooms
   - Price range
 - Geospatial search with radius functionality
@@ -53,8 +53,8 @@ DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=real-estate-api
-DB_USERNAME=your_username(root)
-DB_PASSWORD=your_password()
+DB_USERNAME=your_username(default: root)
+DB_PASSWORD=your_password(default: )
 ```
 
 5. Generate application key
