@@ -125,16 +125,19 @@ php artisan serve
        "price": 500000
    }
    ```
+   - ![Create Property Screenshot](./images/Screenshot%202024-12-01%20173210.png)
 
 2. **Search Properties** (GET `/api/properties`):
    - `http://localhost:8000/api/properties`
    - Filter by type: `http://localhost:8000/api/properties?type=House`
    - Filter by address: `http://localhost:8000/api/properties?address=Main`
    - Filter by size range: `http://localhost:8000/api/properties?min_size=1500&max_size=2500`
+   - ![Search Properties Screenshot](./images/Screenshot%202024-12-01%20173139.png)
    
 3. **Search by Location** (GET `/api/properties/search-location`):
    - `http://localhost:8000/api/properties/search-location?latitude=40.7128&longitude=-74.0060`
    - With radius: `http://localhost:8000/api/properties/search-location?latitude=40.7128&longitude=-74.0060&radius=20`
+   - ![Search by Location Screenshot](./images/Screenshot%202024-12-01%20173052.png)
 
 ## Testing
 
