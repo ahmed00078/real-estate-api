@@ -28,8 +28,6 @@ class Property extends Model
         'longitude' => 'float',
         'price' => 'float'
     ];
-
-    // Validation rules for property creation
     public static function validationRules()
     {
         return [
@@ -43,11 +41,9 @@ class Property extends Model
             'price' => 'required|numeric|min:0'
         ];
     }
-
-    // Bonus: Haversine formula for geospatial search
     public static function searchByLocation($latitude, $longitude, $radiusKm = 10)
     {
-        $earthRadius = 6371; // Kilometers
+        $earthRadius = 6371;
 
         return self::select('*')
             ->selectRaw('( ? * acos( 

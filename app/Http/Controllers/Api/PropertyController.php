@@ -18,7 +18,7 @@ class PropertyController extends Controller
             $query->where('type', $request->input('type'));
         }
 
-        // Filter by address (partial match)
+        // Filter by address
         if ($request->has('address')) {
             $query->where('address', 'LIKE', '%' . $request->input('address') . '%');
         }
@@ -76,7 +76,7 @@ class PropertyController extends Controller
             ], 422);
         }
 
-        $radius = $request->input('radius', 10); // Default 10km
+        $radius = $request->input('radius', 10);
         $properties = Property::searchByLocation(
             $request->input('latitude'), 
             $request->input('longitude'), 
