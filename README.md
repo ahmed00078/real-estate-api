@@ -19,7 +19,7 @@ This is a Laravel-based REST API for managing real estate properties, developed 
 
 - **Framework**: Laravel
 - **Language**: PHP
-- **Database**: MySQL (recommended)
+- **Database**: MySQL
 - **API**: RESTful
 
 ## Prerequisites
@@ -27,13 +27,13 @@ This is a Laravel-based REST API for managing real estate properties, developed 
 - PHP 8.0+
 - Composer
 - MySQL
-- Laravel 9 or 10
+- Laravel 10
 
 ## Installation Steps
 
 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/real-estate-api.git
+git clone https://github.com/ahmed00078/real-estate-api.git
 cd real-estate-api
 ```
 
@@ -52,9 +52,9 @@ cp .env.example .env
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=real_estate_db
-DB_USERNAME=your_username
-DB_PASSWORD=your_password
+DB_DATABASE=real-estate-api
+DB_USERNAME=your_username(root)
+DB_PASSWORD=your_password()
 ```
 
 5. Generate application key
@@ -113,9 +113,6 @@ php artisan serve
 php artisan test
 ```
 
-## Postman Collection
-A Postman collection is available in `postman_collection.json` for easy API testing.
-
 ## Backlog and Future Improvements
 
 1. **Authentication & Authorization**
@@ -163,12 +160,8 @@ A Postman collection is available in `postman_collection.json` for easy API test
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
 ## Contact
 
-Danubio IT Services - contact@danubio.com
+Danubio IT Services - hello@danub.io(from their website)
 
-Project Link: [https://github.com/yourusername/real-estate-api](https://github.com/yourusername/real-estate-api)
+Me - ahmedsidimohammed78@gmail.com
